@@ -1,0 +1,152 @@
+<div id="podcasts_show">
+  <div id="show_banner">
+
+    <div class="wrapper_skinny">
+      <h1><%= @podcast.title %></h1>
+      <p class="description"><%= @podcast.description %></p>
+
+      <% unless @podcast.itunes.blank? %>
+          <a href="<%= @podcast.itunes %>" class="subscribe_link">iTunes</a>
+      <% end %>
+
+      <% unless @podcast.stitcher.blank? %>
+          <a href="<%= @podcast.stitcher %>" class="subscribe_link">Stitcher</a>
+      <% end %>
+
+      <% unless @podcast.podbay.blank? %>
+          <a href="<%= @podcast.podbay %>" class="subscribe_link">PodBay</a>
+      <% end %>
+
+    </div>
+
+  </div>
+
+  <div id="breadcrumb">
+      <%= link_to podcasts_path do %>
+        All Podcasts
+        <span>/</span>
+        <%= @podcast.title %>
+      <% end %>
+  </div>
+
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="#">
+              <img src="images/tof1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2> <a href="#">Staying Motivated While Juggling Multiple Projects</a> </h2>
+            <p class="description">
+
+              Sam Soffes, founder of many awesome apps such as Cheddar, Roon, Whiskey, and Shares, talks with us about how he splits his time between freelancing and all his other projects.
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="#">
+              <img src="images/tof1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2> <a href="#">Staying Motivated While Juggling Multiple Projects</a> </h2>
+            <p class="description">
+
+              Sam Soffes, founder of many awesome apps such as Cheddar, Roon, Whiskey, and Shares, talks with us about how he splits his time between freelancing and all his other projects.
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="#">
+              <img src="images/tof1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2> <a href="#">Staying Motivated While Juggling Multiple Projects</a> </h2>
+            <p class="description">
+
+              Sam Soffes, founder of many awesome apps such as Cheddar, Roon, Whiskey, and Shares, talks with us about how he splits his time between freelancing and all his other projects.
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="#">
+              <img src="images/tof1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2> <a href="#">Staying Motivated While Juggling Multiple Projects</a> </h2>
+            <p class="description">
+
+              Sam Soffes, founder of many awesome apps such as Cheddar, Roon, Whiskey, and Shares, talks with us about how he splits his time between freelancing and all his other projects.
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="episodes">
+    <div class="wrapper_skinny">
+      <ul class="cf">
+        <li class="cf">
+          <div class="episode_thumbnail">
+            <a href="#">
+              <img src="images/tof1.png" alt="">
+            </a>
+          </div>
+          <div class="episode_overview">
+            <h2> <a href="#">Staying Motivated While Juggling Multiple Projects</a> </h2>
+            <p class="description">
+
+              Sam Soffes, founder of many awesome apps such as Cheddar, Roon, Whiskey, and Shares, talks with us about how he splits his time between freelancing and all his other projects.
+
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+<div class="pagination">
+  <span class="previous_page disabled">Previous</span>
+  <em class="current">1</em>
+  <a href="#">2</a>
+  <a href="#" class="next_page">Next</a>
+</div>
