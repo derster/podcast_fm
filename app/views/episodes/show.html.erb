@@ -25,8 +25,24 @@
       <%= link_to podcasts_path do %>
         All Podcasts
         <span>/</span>
-        <%= @podcast.title %>
+        <%= link_to @podcast.title, podcast_path(@podcast) %>
+        <span>/</span>
+        <%= @episode.title %>
       <% end %>
+  </div>
+
+
+  <div id="episode_content">
+    <div class="wrapper_skinny">
+
+        <img class="current_episode_thumbnail" src="images/tof5.png" alt="">
+
+      <h2><%= @episode.title %></h2>
+
+      <p class="description">
+        <%= @episode.description %>
+      </p>
+    </div>
   </div>
 
   <div id="episodes">
@@ -43,7 +59,7 @@
                 <h2> <a href="#"><%= link_to episode.title, podcast_episode_path(@podcast, episode) %> </h2>
                 <p class="description">
 
-                  <%= episode.description %>
+                  <%= truncate(episode.description, length:150) %>
                 </p>
               </div>
             </li>
@@ -51,7 +67,6 @@
       </ul>
     </div>
   </div>
-</div>
 
 
 <div class="pagination">
