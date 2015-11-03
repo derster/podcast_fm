@@ -12,6 +12,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'devise', '~> 3.5.2'
 gem 'paperclip', '~> 4.3', '>= 4.3.1'
+gem 'jplayer-rails', '~> 2.5'
 group :development, :test do
   gem 'byebug'
 end
@@ -26,4 +27,5 @@ end
 group :production do
   gem 'pg'
   gem 'rails_12factor'
+  gem 'aws-sdk', '~> 2.1', '>= 2.1.33'
 end
