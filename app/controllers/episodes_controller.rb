@@ -1,6 +1,6 @@
 class EpisodesController < ApplicationController
   before_action :authenticate_podcast!, except: [:show]
-  before_filter :require_permission, except: [:show]
+  before_filter :require_permission
   before_action :find_podcast
   before_action :find_episode, only: [:show, :edit, :update, :destroy]
 
@@ -40,7 +40,7 @@ class EpisodesController < ApplicationController
   private
 
   def episode_params
-    params.require(:episode).permit(:title, :description, :episode_thumbnail, :mp3)
+    params.require(:episode).permit(:title, :description, :episode_thumbnail)
   end
   def find_podcast
     @podcast = Podcast.find(params[:podcast_id])
