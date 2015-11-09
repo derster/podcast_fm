@@ -155,9 +155,19 @@
 		a{
 			text-decoration: none;
 		}
-		.jp-jplayer, .jp-audio{
+
+		div.jp-type-single{
 			width: 70%;
-			margin: 3rem auto .5rem auto;
+			margin: auto;
+
+		}
+		.jp-jplayer, .jp-audio{
+			width: 100%;
+			position:fixed;
+			left: 0;
+			bottom: 0;
+			background: $highlight;
+			padding: 10px;
 		}
 
 		.jp-title{
